@@ -1,0 +1,26 @@
+Generating Random Numbers
+------------
+Random randomNum = new Random();
+randomNum.nextInt();
+randomNum.nextInt(bound) // [0,bound)
+
+===========================================================
+
+String Operations
+------------------
+String split[] = str.split("-| |\\.|:|!"); // pipe is used to separate regex
+Arrays.stream(split).map(String:: trim).filter(x->!x.isEmpty()).collect(Collectors.toList()); //Collecting non empty string as list.
+
+============================================================
+
+Convert Arrays to List
+--------------------------
+int arr[] = {1,2,3,4};
+List<Integer> listOfNum = Arrays.stream(arr).collect(Collectors.toList());
+
+Convert List to Arrays
+----------------------
+listofNum.toArray(new Integer[0]);// pass size 0 list.
+
+=================================================
+
