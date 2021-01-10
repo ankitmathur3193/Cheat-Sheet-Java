@@ -28,3 +28,18 @@ listofNum.toArray(new Integer[0]);// pass size 0 list.
 
 =================================================
 
+Sorting
+Arrays.sort(arr);
+Arrays.sort(arr, Collections.reverseOrder()); // This won't work on primitve arrays, for them sort in ascending order and then reverse.
+Collections.reverse(Arrays.asList(arr1)); // Reverse a list
+
+Arrays.sort(
+        someClasses,
+        (first, second) -> { //Custom sorting
+          if (first.element1 == second.element1) {
+            return first.element2 - second.element2; // Ascending order
+          }
+          return second.element1 - first.element1; //Descending order
+        });
+Collections.sort(list,Colletions.reverseOrder());        
+        
