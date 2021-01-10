@@ -11,7 +11,7 @@ random.nextLong();
 
 String Operations
 ------------------
-String split[] = str.split("-| |\\.|:|!"); // pipe is used to separate regex
+String split[] = str.split("-| |\\.|:|!"); // pipe is used to separate regex, escaping fullstop(\\.) also.
 Arrays.stream(split).map(String:: trim).filter(x->!x.isEmpty()).collect(Collectors.toList()); //Collecting non empty string as list.
 
 ============================================================
