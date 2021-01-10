@@ -16,7 +16,8 @@ String Operations
 ------------------
 ```
 String split[] = str.split("-| |\\.|:|!"); // pipe is used to separate regex, escaping fullstop(\\.) also.
-Arrays.stream(split).map(String:: trim).filter(x->!x.isEmpty()).collect(Collectors.toList()); //Collecting non empty string as list.
+Arrays.stream(split).map(String:: trim).filter(x->!x.isEmpty()).collect(Collectors.toList()); //Collecting non 
+                                                                                                empty string as list.
 ```
 
 Convert Arrays to List
@@ -24,7 +25,8 @@ Convert Arrays to List
 ```
 int arr[] = {1,2,3,4};
 List<Integer> listOfNum = Arrays.asList(arr); 
-List<Integer> listOfNum = Arrays.stream(arr).map(x->x*2).collect(Collectors.toList());// Transform and convert to List.
+List<Integer> listOfNum = Arrays.stream(arr).map(x->x*2).collect(Collectors.toList());// Transform and 
+                                                                                        convert to List.
 ```
 
 Convert List to Arrays
@@ -37,7 +39,8 @@ Sorting
 -------------------------------------------------
 ```
 Arrays.sort(arr);
-Arrays.sort(arr, Collections.reverseOrder()); // This won't work on primitve arrays, for them sort in ascending order and then reverse.
+Arrays.sort(arr, Collections.reverseOrder()); // This won't work on primitve arrays, for them sort in 
+                                                 ascending order and then reverse.
 Collections.reverse(Arrays.asList(arr1)); // Reverse a list
 Collections.sort(list,Colletions.reverseOrder());
 
