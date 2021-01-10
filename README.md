@@ -16,7 +16,7 @@ String Operations
 ------------------
 ```
 String split[] = str.split("-| |\\.|:|!"); // pipe is used to separate regex, escaping fullstop(\\.) also.
-Arrays.stream(split).map(String:: trim).filter(x->!x.isEmpty()).collect(Collectors.toList()); //Collecting non 
+Arrays.stream(split).map(String:: trim).filter(x->!x.isEmpty()).collect(Collectors.toList()); // Collecting non 
                                                                                                 empty string as list.
 ```
 
@@ -50,7 +50,7 @@ Arrays.sort(
           if (first.element1 == second.element1) {
             return first.element2 - second.element2; // Ascending order
           }
-          return second.element1 - first.element1; //Descending order
+          return second.element1 - first.element1; // Descending order
         });
 ```
 
