@@ -1,8 +1,11 @@
 Generating Random Numbers
 ------------
-Random randomNum = new Random();
+Random randomNum = new Random(); // Random(long seed)
 randomNum.nextInt();
 randomNum.nextInt(bound) // [0,bound)
+randomNum.nextDouble();
+randomNum.nextBoolean();
+random.nextLong();
 
 ===========================================================
 
