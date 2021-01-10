@@ -33,6 +33,7 @@ Sorting
 Arrays.sort(arr);
 Arrays.sort(arr, Collections.reverseOrder()); // This won't work on primitve arrays, for them sort in ascending order and then reverse.
 Collections.reverse(Arrays.asList(arr1)); // Reverse a list
+Collections.sort(list,Colletions.reverseOrder());
 
 Arrays.sort(
         someClasses,
@@ -42,8 +43,6 @@ Arrays.sort(
           }
           return second.element1 - first.element1; //Descending order
         });
-Collections.sort(list,Colletions.reverseOrder());
-
 =====================================================
 
 PriorityQueue
