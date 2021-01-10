@@ -17,18 +17,19 @@ Arrays.stream(split).map(String:: trim).filter(x->!x.isEmpty()).collect(Collecto
 ============================================================
 
 Convert Arrays to List
---------------------------
+--------------------------------------------
 int arr[] = {1,2,3,4};
 List<Integer> listOfNum = Arrays.asList(arr);
 List<Integer> listOfNum = Arrays.stream(arr).map(x->x*2).collect(Collectors.toList());// Transform and convert to List.
 
 Convert List to Arrays
-----------------------
+------------------------------------------------
 listofNum.toArray(new Integer[0]);// pass size 0 list.
 
 =================================================
 
 Sorting
+-------------------------------------------------
 Arrays.sort(arr);
 Arrays.sort(arr, Collections.reverseOrder()); // This won't work on primitve arrays, for them sort in ascending order and then reverse.
 Collections.reverse(Arrays.asList(arr1)); // Reverse a list
@@ -41,5 +42,17 @@ Arrays.sort(
           }
           return second.element1 - first.element1; //Descending order
         });
-Collections.sort(list,Colletions.reverseOrder());        
-        
+Collections.sort(list,Colletions.reverseOrder());
+
+=====================================================
+
+PriorityQueue
+--------------------------------------------------
+PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+minHeap.size()
+minHeap.poll() // Removes and returns head.
+minHeap.peek() // Doesn't returns head.
+minHeap.add(element)
+
+=====================================================
