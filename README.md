@@ -25,9 +25,6 @@ Convert Arrays to List
 ```java
 int arr[] = {1,2,3,4};
 List<Integer> listOfNum = Arrays.asList(arr); 
-/**
-
-**/
 List<Integer> listOfNum = Arrays.stream(arr).map(x->x*2).collect(Collectors.toList()); //Transform 
                                                                              // and convert to List.
 ```
