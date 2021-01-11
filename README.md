@@ -65,3 +65,25 @@ minHeap.peek() // Doesn't returns head.
 minHeap.add(element)
 ```
 
+Queue
+--------------------------------------------------
+```
+Queue<Integer> queue = new LinkedList<>();
+queue.add(element)
+queue.poll() // Returns and remove element.
+queue.peek() // Returns but doesn't remove.
+queue.isEmpty()
+queue.size()
+```
+
+Stack
+-----------------------------------
+```
+Stack<Integer> stack = new Stack<>();
+stack.push(element)
+stack.pop() // Returns and removes top element.
+stack.peek() // Returns but doesn't remove.
+stack.isEmpty()
+stack.size()
+```
+
