@@ -39,9 +39,9 @@ Sorting
 -------------------------------------------------
 ```java
 Arrays.sort(arr);
-Arrays.sort(arr, Collections.reverseOrder()); // This won't work on primitve arrays, for them sort in 
-                                              // ascending order and then reverse.
-Collections.reverse(Arrays.asList(arr1)); // Reverse a list
+Arrays.sort(arr, Collections.reverseOrder()); // This won't work on primitve arrays, for them sort 
+                                              // in ascending order and then reverse.
+Collections.reverse(Arrays.asList(arr)); // Reverse a list
 Collections.sort(list,Colletions.reverseOrder());
 
 Arrays.sort(
@@ -57,7 +57,7 @@ Arrays.sort(
 PriorityQueue
 --------------------------------------------------
 ```java
-PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+PriorityQueue<Integer> minHeap = new PriorityQueue<>(); // By default its minHeap.
 PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
 minHeap.size();
 minHeap.poll(); // Removes and returns head.
