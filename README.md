@@ -68,7 +68,7 @@ minHeap.add(element)
 Queue
 --------------------------------------------------
 ```
-Queue<Integer> queue = new LinkedList<>();
+Queue<Integer> queue = new LinkedList<>(); // Queue cannot be instatinated, its an abstract class.
 queue.add(element)
 queue.poll() // Returns and remove element.
 queue.peek() // Returns but doesn't remove.
