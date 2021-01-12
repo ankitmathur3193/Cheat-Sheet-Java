@@ -20,6 +20,12 @@ Arrays.stream(split).map(String:: trim).filter(x->!x.isEmpty()).collect(Collecto
                                                                                         // empty string as list.
 ```
 
+Array Operations
+------------------
+```java
+Arrays.fill(arr, INTEGER.MAX_VALUE); // only fills one dimensional arrays.
+```
+
 Convert Arrays to List
 -----------------------
 ```java
