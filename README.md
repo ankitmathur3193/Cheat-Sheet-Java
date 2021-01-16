@@ -112,15 +112,33 @@ File Reading
 File Writing
 ---------------------------------
 ```java
-     FileWriter fileWriter = null;
-        try {
-            fileWriter = new FileWriter("/Users/mathurankit/Desktop/output.txt");
-        } catch (IOException e) {
-            System.out.println("Can't write file.");
-        }
-        PrintWriter printWriter = new PrintWriter(fileWriter);
-        printWriter.println("My name is Ankit.");
+   FileWriter fileWriter = null;
+      try {
+          fileWriter = new FileWriter("/Users/mathurankit/Desktop/output.txt");
+      } catch (IOException e) {
+          System.out.println("Can't write file.");
+      }
+      PrintWriter printWriter = new PrintWriter(fileWriter);
+      printWriter.println("My name is Ankit.");
 
-        printWriter.flush();//Its important, otherwise data won't be written.
-        printWriter.close();
+      printWriter.flush();//Its important, otherwise data won't be written.
+      printWriter.close();
  ```
+
+Scanner 
+-----------------------------
+```java
+      Scanner scanner = new Scanner(System.in);
+      while (scanner.hasNext()) {
+          if (scanner.hasNextLine()) {
+              System.out.println(scanner.nextLine());
+          }
+          if (scanner.hasNextInt()) {
+              System.out.println(scanner.nextInt());
+          }
+          if (scanner.hasNextDouble()) {
+              System.out.println(scanner.nextDouble());
+          }
+      }
+      scanner.close();
+```
