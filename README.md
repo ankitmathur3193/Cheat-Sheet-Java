@@ -109,3 +109,18 @@ File Reading
         scanner.close();
 ```
         
+File Writing
+---------------------------------
+```java
+     FileWriter fileWriter = null;
+        try {
+            fileWriter = new FileWriter("/Users/mathurankit/Desktop/output.txt");
+        } catch (IOException e) {
+            System.out.println("Can't write file.");
+        }
+        PrintWriter printWriter = new PrintWriter(fileWriter);
+        printWriter.println("My name is Ankit.");
+
+        printWriter.flush();//Its important, otherwise data won't be written.
+        printWriter.close();
+ ```
