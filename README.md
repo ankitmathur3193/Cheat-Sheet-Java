@@ -96,49 +96,49 @@ stack.size();
 File Reading 
 ----------------------------------
 ```java
- FileReader fileReader = null;
-        try {
-            fileReader = new FileReader("/Users/mathurankit/Desktop/input.txt");
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found");
-        }
-        Scanner scanner = new Scanner(fileReader);
-        while (scanner.hasNextLine()) {
-            System.out.println(scanner.nextLine());
-        }
-        scanner.close();
+FileReader fileReader = null;
+try {
+    fileReader = new FileReader("/Users/mathurankit/Desktop/input.txt");
+} catch (FileNotFoundException e) {
+    System.out.println("File not found");
+}
+Scanner scanner = new Scanner(fileReader);
+while (scanner.hasNextLine()) {
+    System.out.println(scanner.nextLine());
+}
+scanner.close();
 ```
         
 File Writing
 ---------------------------------
 ```java
-   FileWriter fileWriter = null;
-      try {
-          fileWriter = new FileWriter("/Users/mathurankit/Desktop/output.txt");
-      } catch (IOException e) {
-          System.out.println("Can't write file.");
-      }
-      PrintWriter printWriter = new PrintWriter(fileWriter);
-      printWriter.println("My name is Ankit.");
+FileWriter fileWriter = null;
+try {
+    fileWriter = new FileWriter("/Users/mathurankit/Desktop/output.txt");
+} catch (IOException e) {
+    System.out.println("Can't write file.");
+}
+PrintWriter printWriter = new PrintWriter(fileWriter);
+printWriter.println("My name is Ankit.");
 
-      printWriter.flush();//Its important, otherwise data won't be written.
-      printWriter.close();
+printWriter.flush();//Its important, otherwise data won't be written.
+printWriter.close();
  ```
 
 Scanner 
 -----------------------------
 ```java
-      Scanner scanner = new Scanner(System.in);
-      while (scanner.hasNext()) {
-          if (scanner.hasNextLine()) {
-              System.out.println(scanner.nextLine());
-          }
-          if (scanner.hasNextInt()) {
-              System.out.println(scanner.nextInt());
-          }
-          if (scanner.hasNextDouble()) {
-              System.out.println(scanner.nextDouble());
-          }
-      }
-      scanner.close();
+Scanner scanner = new Scanner(System.in);
+while (scanner.hasNext()) {
+    if (scanner.hasNextLine()) {
+        System.out.println(scanner.nextLine());
+    }
+    if (scanner.hasNextInt()) {
+        System.out.println(scanner.nextInt());
+    }
+    if (scanner.hasNextDouble()) {
+        System.out.println(scanner.nextDouble());
+    }
+}
+scanner.close();
 ```
