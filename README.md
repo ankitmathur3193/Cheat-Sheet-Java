@@ -93,3 +93,17 @@ stack.isEmpty();
 stack.size();
 ```
 
+File Reading 
+----------------------------------
+'''java
+ FileReader fileReader = null;
+        try {
+            fileReader = new FileReader("/Users/mathurankit/Desktop/input.txt");
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found");
+        }
+        Scanner scanner = new Scanner(fileReader);
+        while (scanner.hasNextLine()) {
+            System.out.println(scanner.nextLine());
+        }
+        scanner.close();'''
