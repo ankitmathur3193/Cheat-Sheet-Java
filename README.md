@@ -95,7 +95,7 @@ stack.size();
 
 File Reading 
 ----------------------------------
-'''java
+```java
  FileReader fileReader = null;
         try {
             fileReader = new FileReader("/Users/mathurankit/Desktop/input.txt");
@@ -106,4 +106,6 @@ File Reading
         while (scanner.hasNextLine()) {
             System.out.println(scanner.nextLine());
         }
-        scanner.close();'''
+        scanner.close();
+```
+        
