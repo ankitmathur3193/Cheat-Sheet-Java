@@ -15,7 +15,7 @@ random.nextLong();
 String Operations
 ------------------
 ```java
-String split[] = str.split("-| |\\.|:|!"); // pipe is used to separate regex, escaping fullstop(\\.) also.
+String split[] = str.split("-| |\\.|:|!"); // Pipe is used to separate regex, escaping fullstop(\\.) also.
 Arrays.stream(split).map(String:: trim).filter(x->!x.isEmpty()).collect(Collectors.toList()); // Collecting non 
                                                                                         // empty string as list.
 ```
@@ -23,7 +23,7 @@ Arrays.stream(split).map(String:: trim).filter(x->!x.isEmpty()).collect(Collecto
 Array Operations
 ------------------
 ```java
-Arrays.fill(arr, INTEGER.MAX_VALUE); // only fills one dimensional arrays.
+Arrays.fill(arr, INTEGER.MAX_VALUE); // Only fills one dimensional arrays.
 ```
 
 Convert Arrays to List
@@ -121,7 +121,7 @@ try {
 PrintWriter printWriter = new PrintWriter(fileWriter);
 printWriter.println("My name is Ankit.");
 
-printWriter.flush();//Its important, otherwise data won't be written.
+printWriter.flush(); // Its important, otherwise data won't be written.
 printWriter.close();
  ```
 
