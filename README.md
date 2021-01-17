@@ -102,7 +102,7 @@ try {
 } catch (FileNotFoundException e) {
     System.out.println("File not found");
 }
-Scanner scanner = new Scanner(fileReader);
+Scanner scanner = new Scanner(fileReader); // Pass fileReader
 while (scanner.hasNextLine()) {
     System.out.println(scanner.nextLine());
 }
@@ -121,14 +121,14 @@ try {
 PrintWriter printWriter = new PrintWriter(fileWriter);
 printWriter.println("My name is Ankit.");
 
-printWriter.flush(); // Its important, otherwise data won't be written.
+printWriter.flush(); // Its important, otherwise data won't be written
 printWriter.close();
  ```
 
 Scanner 
 -----------------------------
 ```java
-Scanner scanner = new Scanner(System.in);
+Scanner scanner = new Scanner(System.in); // Pass System.in
 while (scanner.hasNext()) {
     if (scanner.hasNextLine()) {
         System.out.println(scanner.nextLine());
