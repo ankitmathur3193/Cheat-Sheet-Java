@@ -142,3 +142,13 @@ while (scanner.hasNext()) {
 }
 scanner.close();
 ```
+Wrapper classes
+------------------------------
+```java
+Integer.MAX_VALUE; // Long,Float,Double
+Integer.MIN_VALUE;
+Integer.parseInt(String s); 
+Long.parseLong(String s);
+Double.parseDouble(String s);
+Float.parseFloat(String s);
+```
