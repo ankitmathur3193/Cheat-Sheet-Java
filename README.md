@@ -195,7 +195,7 @@ class Pair implements Comparable<Pair> {
     }
 
     @Override
-    public String toString() { // public toString is important
+    public String toString() { // public String is important
         return "Pair{" +
                 "x=" + x +
                 ", distance=" + distance +
