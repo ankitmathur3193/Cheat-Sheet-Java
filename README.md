@@ -194,6 +194,14 @@ class Pair implements Comparable<Pair> {
         return Objects.hash(x, distance);
     }
 
+    @Override
+    public String toString() { // public toString is important
+        return "Pair{" +
+                "x=" + x +
+                ", distance=" + distance +
+                '}';
+    }
+    
     Pair(int x, int distance) {
         this.x = x;
         this.distance = distance;
