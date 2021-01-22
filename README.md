@@ -213,3 +213,10 @@ BFS
 ------
 1. While pushing elements to queue, mark them visited so they are not added to queue twice.
 2. While polling just print them.
+
+Dijkstra
+---------
+1. No need to have a visited array, just insert elements in the minHeap.
+2. While insertion check, if vertex current distance is more than the new distance 
+, then only insert and also update current distance.
+3. After removal from queue, try for all edges again and again.
