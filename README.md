@@ -220,3 +220,5 @@ Dijkstra
 2. While insertion check, if vertex current distance is more than the new distance 
 , then only insert and also update current distance.
 3. After removal from queue, try for all edges again and again.
+4. Loop until all distances are not finalized, after a point, you won't find any new distance smaller than
+the current distance, and queue will become empty ultimately(since no new insertions are happening).
