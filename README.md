@@ -152,3 +152,19 @@ Long.parseLong(String s);
 Double.parseDouble(String s);
 Float.parseFloat(String s);
 ```
+Graph Decalaration (Adjaceny List)
+-------------------------------
+```java
+class Graph {
+  private int vertex;
+  private LinkedList<Integer> adj[]; // Array of LinkedList
+
+  Graph(int vertex) {
+      this.vertex = vertex;
+      this.adj = new LinkedList[vertex]; // Create array.
+      for (int index = 0; index < vertex; ++index) {
+          adj[index] = new LinkedList<>(); // Initialize every element.
+      }
+  }
+}
+```
