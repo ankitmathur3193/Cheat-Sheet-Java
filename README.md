@@ -157,15 +157,47 @@ Graph Decalaration (Adjaceny List)
 ```java
 class Graph {
   private int vertex;
-  private LinkedList<Integer> adj[]; // Array of LinkedList
+  private LinkedList<Integer> adj[]; // Declare array of LinkedList
 
   Graph(int vertex) {
       this.vertex = vertex;
-      this.adj = new LinkedList[vertex]; // Create array.
+      this.adj = new LinkedList[vertex]; // Create array of size vertex
       for (int index = 0; index < vertex; ++index) {
-          adj[index] = new LinkedList<>(); // Initialize every element.
+          adj[index] = new LinkedList<>(); // Initialize every element
       }
   }
+}
+```
+Sample Pair class implementing compareTo, equals and hasCode
+------------------------
+```java
+class Pair implements Comparable<Pair> {
+    int x;
+    int distance;
+
+    @Override
+    public int compareTo(Pair obj) { // public int is important
+        return distance - obj.distance;
+    }
+
+    @Override
+    public boolean equals(Object o) { // public boolean is important
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Pair pair = (Pair) o;
+        return x == pair.x &&
+                distance == pair.distance;
+    }
+
+    @Override
+    public int hashCode() { // public int is important
+        return Objects.hash(x, distance);
+    }
+
+    Pair(int x, int distance) {
+        this.x = x;
+        this.distance = distance;
+    }
 }
 ```
 ### Algo DS notes ###
