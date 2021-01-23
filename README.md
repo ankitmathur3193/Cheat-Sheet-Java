@@ -230,3 +230,9 @@ Dijkstra
 3. After removal from queue, try for all edges again and again.
 4. Loop until all distances are not finalized, after a point, you won't find any new distance smaller than
 the current distance, and queue will become empty ultimately(since no new insertions are happening).
+
+
+# Complitation Mistakes #
+1. Check that you are returning and returing correct type from function.
+2. Remeber to write return type of a function.
+
