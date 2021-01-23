@@ -165,13 +165,13 @@ Graph Decalaration (Adjaceny List)
 ```java
 class Graph {
   private int vertex;
-  private LinkedList<Integer> adj[]; // Declare array of LinkedList
+  private ArrayList<Integer> adj[]; // Declare array of LinkedList
 
   Graph(int vertex) {
       this.vertex = vertex;
-      this.adj = new LinkedList[vertex]; // Create array of size vertex
+      this.adj = new ArrayList[vertex]; // Create array of size vertex
       for (int index = 0; index < vertex; ++index) {
-          adj[index] = new LinkedList<>(); // Initialize every element
+          adj[index] = new ArrayList<>(); // Initialize every element
       }
   }
 }
