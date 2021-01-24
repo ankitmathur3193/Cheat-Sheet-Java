@@ -220,7 +220,16 @@ class Pair implements Comparable<Pair> {
 BFS
 ------
 1. While pushing elements to queue, mark them visited so they are not added to queue twice.
-2. While polling just print them.
+2. While polling just print them. Since vertex can't be added twice to a queue, don't need to 
+check if it is already visited or not while polling them.
+
+DFS
+---------
+1. While calling recurison mark the vertex as visited.
+2. Before calling check if it is already visited or not.
+3. Since recurison can't be called twice on a vertex, just print them at the top of
+recurison function, don't need to check if they are already visited.
+3. Don't put base case if vertex is already visited, don't visit it.
 
 Dijkstra
 ---------
@@ -231,6 +240,10 @@ Dijkstra
 4. Loop until all distances are not finalized, after a point, you won't find any new distance smaller than
 the current distance, and queue will become empty ultimately(since no new insertions are happening).
 
+Topological Sort
+----------------
+1. Same as dfs, just use a stack, visit all children first than insert the parent into stack.
+2. After dfs completes, print elements of stack.
 
 # Complitation Mistakes #
 1. Check that you are returning and returing correct type from function.
