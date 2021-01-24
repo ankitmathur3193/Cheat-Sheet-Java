@@ -32,6 +32,9 @@ Array Operations
 ------------------
 ```java
 Arrays.fill(arr, INTEGER.MAX_VALUE); // Only fills one dimensional arrays
+List<Integer> arr = Arrays.asList(1, 1, 2, 3, 4, 5, 6, 7, 8);
+//Grouping numbers by divisibility of 3.
+Map<Integer, List<Integer>> numByRemainder = arr.stream().collect(groupingBy(x -> x % 3));
 ```
 
 Convert Arrays to List
