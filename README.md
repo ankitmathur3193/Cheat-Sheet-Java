@@ -229,7 +229,7 @@ DFS
 2. Before calling check if it is already visited or not.
 3. Since recurison can't be called twice on a vertex, just print them at the top of
 recurison function, don't need to check if they are already visited.
-3. Don't put base case if vertex is already visited, don't visit it.
+3. Don't put base case if vertex is already visited.
 
 Dijkstra
 ---------
