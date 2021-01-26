@@ -25,10 +25,11 @@ input.length(); // .size() is not present in String
 input.charAt(4); // return 4th char
 input.substring(2); // Returns substring starting from index 2
 input.substring(2,5); // Returns substring starting from index 2 and ending at 4
+input.equals(String s); // Do string comparison using equals.
+
 Integer.parseInt(String.valueOf(input.charAt(2)); // charAt Returns char, but parseInt only supports String
 
 String.valueOf(int i); // int,long,float,double,char,boolean,object
-input.equals(String s); // Do string comparison using equals.
 ```
 
 Array Operations
