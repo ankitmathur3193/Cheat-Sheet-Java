@@ -6,7 +6,7 @@ Generating Random Numbers
 Random randomNum = new Random(); // Random(long seed)
 Random random = new Random(System.currentTimeMillis()); // seed as current time
 randomNum.nextInt();
-randomNum.nextInt(bound) // [0,bound)
+randomNum.nextInt(bound); // [0,bound)
 randomNum.nextDouble();
 randomNum.nextBoolean();
 random.nextLong();
