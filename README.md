@@ -28,7 +28,7 @@ input.substring(2,5); // Returns substring starting from index 2 and ending at 4
 Integer.parseInt(String.valueOf(input.charAt(2)); // charAt Returns char, but parseInt only supports String
 
 String.valueOf(int i); // int,long,float,double,char,boolean,object
-String.equals(String s); // Do string comparison using equals.
+input.equals(String s); // Do string comparison using equals.
 ```
 
 Array Operations
