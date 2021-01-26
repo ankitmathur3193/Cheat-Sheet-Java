@@ -257,4 +257,4 @@ Topological Sort
 2. Remeber to write return type of a function.
 
 # Miscallenous #
-Use equals for comparison (String, Integer) https://ideone.com/XJsXVp
+Use equals for comparison (String, Integer) : https://ideone.com/XJsXVp
