@@ -172,7 +172,7 @@ Graph Decalaration (Adjaceny List)
 ```java
 class Graph {
   private int vertex;
-  private ArrayList<Integer> adj[]; // Declare array of LinkedList
+  private ArrayList<Integer> adj[]; // Declare array of ArrayList
 
   Graph(int vertex) {
       this.vertex = vertex;
