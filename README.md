@@ -107,6 +107,23 @@ stack.peek(); // Returns but doesn't remove
 stack.isEmpty();
 stack.size();
 ```
+TreeMap
+----------------------------------
+```java
+TreeMap<String, Integer> treeMap = new TreeMap<>(); // keys should implements Comparable
+treeMap.put("ankit", 1);
+treeMap.putIfAbsent("ankit", 1);
+treeMap.get("ankit"); // Returns key otherwise null
+treeMap.containsKey("ankit"); // Checks for key
+Set<Map.Entry<String, Integer>> entries = treeMap.entrySet(); // Key Value pairs
+        Iterator<Map.Entry<String, Integer>> it = entries.iterator();
+
+        while (it.hasNext()) {
+            Map.Entry<String, Integer> next = it.next();
+            System.out.println("Key = " + next.getKey() + " Value = " + next.getValue());
+        }
+        
+```
 
 File Reading 
 ----------------------------------
