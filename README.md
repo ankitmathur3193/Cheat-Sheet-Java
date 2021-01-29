@@ -156,6 +156,9 @@ while (scanner.hasNext()) {
     }
 }
 scanner.close();
+
+String string = "ankit , \n mathur, My name is \n yo";
+Scanner scanner = new Scanner(string); // Now scanner could be used to parse String
 ```
 Wrapper classes
 ------------------------------
