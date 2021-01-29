@@ -26,6 +26,9 @@ input.charAt(4); // return 4th char
 input.substring(2); // Returns substring starting from index 2
 input.substring(2,5); // Returns substring starting from index 2 and ending at 4
 input.equals(String s); // Do string comparison using equals.
+input.indexOf('a'); // Returns index of first occurence of 'a', otherwise -1;
+input.indexOf('a', 3);// Returns index of first occurence of 'a' starting fromIndex 3, otherwise -1;
+input.lastIndexOf('a', 3);// Returns index of last occurence of 'a' starting, otherwise -1;
 
 Integer.parseInt(String.valueOf(input.charAt(2)); // charAt Returns char, but parseInt only supports String
 
@@ -115,14 +118,18 @@ treeMap.put("ankit", 1);
 treeMap.putIfAbsent("ankit", 1);
 treeMap.get("ankit"); // Returns key otherwise null
 treeMap.containsKey("ankit"); // Checks for key
-Set<Map.Entry<String, Integer>> entries = treeMap.entrySet(); // Key Value pairs
-        Iterator<Map.Entry<String, Integer>> it = entries.iterator();
 
-        while (it.hasNext()) {
-            Map.Entry<String, Integer> next = it.next();
-            System.out.println("Key = " + next.getKey() + " Value = " + next.getValue());
-        }
-        
+Set<Map.Entry<String, Integer>> entries = treeMap.entrySet(); // Key Value pairs
+Iterator<Map.Entry<String, Integer>> it = entries.iterator();
+while (it.hasNext()) {
+    Map.Entry<String, Integer> next = it.next();
+    System.out.println("Key = " + next.getKey() + " Value = " + next.getValue());
+}
+TreeMap<Intger,Integer> treeMap = new TreeMap();
+treeMap.ceilingEntry(5); returns key >=5
+treeMap.floorEntry(5); returns key <=5
+treeMap.ceilingKey(5); returns key >=5
+treeMap.floorKey(5); returns key <=5       
 ```
 
 File Reading 
