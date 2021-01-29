@@ -126,10 +126,10 @@ while (it.hasNext()) {
     System.out.println("Key = " + next.getKey() + " Value = " + next.getValue());
 }
 TreeMap<Intger,Integer> treeMap = new TreeMap();
-treeMap.ceilingEntry(5); returns key >=5
-treeMap.floorEntry(5); returns key <=5
-treeMap.ceilingKey(5); returns key >=5
-treeMap.floorKey(5); returns key <=5       
+treeMap.ceilingEntry(5); returns smallest key >=5 or null
+treeMap.floorEntry(5); returns largest key <=5 or null
+treeMap.ceilingKey(5); returns smallest key >=5 or null
+treeMap.floorKey(5); returns largest key <=5 or null     
 ```
 
 File Reading 
