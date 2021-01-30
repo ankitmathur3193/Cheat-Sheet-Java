@@ -137,6 +137,21 @@ treeMap.ceilingKey(5); returns smallest key >=5 or null
 treeMap.floorKey(5); returns largest key <=5 or null     
 ```
 
+TreeSet
+-----------------------------
+```java
+TreeSet<Integer> treeSet = new TreeSet<>(); // Datatype should be comparable
+treeSet.add(1);
+treeSet.ceiling(6); // returns smallest key>=6 or null
+treeSet.floor(0); // returns largest key<=0 or null
+treeSet.contains(3); // checks if 3 is present or not
+
+Iterator<Integer> it = treeSet.iterator();
+while (it.hasNext()) {
+    System.out.printf("%d\n", it.next());
+}
+```
+
 File Reading 
 ----------------------------------
 ```java
