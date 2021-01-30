@@ -33,6 +33,11 @@ input.lastIndexOf('a', 3);// Returns index of last occurence of 'a' starting, ot
 Integer.parseInt(String.valueOf(input.charAt(2)); // charAt Returns char, but parseInt only supports String
 
 String.valueOf(int i); // int,long,float,double,char,boolean,object
+StringBuilder sb = new StringBuilder();
+int a = 0;
+sb.append((char) a+'a'); // converting int to alphabet.
+sb.reverse(); // returns stringBuiler with reversed string.
+sb.toString(); // return string.
 ```
 
 Array Operations
