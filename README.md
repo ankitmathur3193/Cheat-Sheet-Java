@@ -35,7 +35,7 @@ input.charAt(2) - '0'; // Converting char to int value.
 String.valueOf(int i); // int,long,float,double,char,boolean,object
 StringBuilder sb = new StringBuilder();
 int a = 0;
-sb.append((char) a+'a'); // converting int to alphabet.
+sb.append((char) (a+'a')); // converting int to alphabet.
 sb.reverse(); // returns stringBuiler with reversed string.
 sb.toString(); // return string.
 ```
