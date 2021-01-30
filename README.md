@@ -30,7 +30,7 @@ input.indexOf('a'); // Returns index of first occurence of 'a', otherwise -1;
 input.indexOf('a', 3);// Returns index of first occurence of 'a' starting fromIndex 3, otherwise -1;
 input.lastIndexOf('a', 3);// Returns index of last occurence of 'a' starting, otherwise -1;
 
-Integer.parseInt(String.valueOf(input.charAt(2)); // charAt Returns char, but parseInt only supports String
+input.charAt(2) - '0'; // Converting char to int value.
 
 String.valueOf(int i); // int,long,float,double,char,boolean,object
 StringBuilder sb = new StringBuilder();
