@@ -27,8 +27,9 @@ input.substring(2); // Returns substring starting from index 2
 input.substring(2,5); // Returns substring starting from index 2 and ending at 4
 input.equals(String s); // Do string comparison using equals.
 input.indexOf('a'); // Returns index of first occurence of 'a', otherwise -1;
-input.indexOf('a', 3);// Returns index of first occurence of 'a' starting fromIndex 3, otherwise -1;
-input.lastIndexOf('a', 3);// Returns index of last occurence of 'a' starting, otherwise -1;
+input.indexOf('a', 3);// Returns index of first occurence of 'a' starting fromIndex 3, otherwise -1
+input.lastIndexOf('a', 3);// Returns index of last occurence of 'a' starting, otherwise -1
+input.startsWith("ank"); returns true if input has prefix "ank"
 
 input.charAt(2) - '0'; // Converting char to int value.
 
@@ -40,6 +41,16 @@ sb.reverse(); // returns stringBuiler with reversed string.
 sb.toString(); // return string.
 ```
 
+Sorting String characters
+-------------------------
+```java
+ String original = "ankit";
+char[] chars = original.toCharArray(); // convert String to charArray
+Arrays.sort(chars);
+String sortedString = new String(chars); // convert charArray to String
+System.out.println(sortedString);
+ ```
+ 
 Array Operations
 ------------------
 ```java
