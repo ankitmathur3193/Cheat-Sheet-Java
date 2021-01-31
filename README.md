@@ -44,7 +44,7 @@ sb.toString(); // return string.
 Sorting String characters
 -------------------------
 ```java
- String original = "ankit";
+String original = "ankit";
 char[] chars = original.toCharArray(); // convert String to charArray
 Arrays.sort(chars);
 String sortedString = new String(chars); // convert charArray to String
