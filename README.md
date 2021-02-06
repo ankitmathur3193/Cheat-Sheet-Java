@@ -284,6 +284,8 @@ class Pair implements Comparable<Pair> {
 Find Pivot in Binary Search
 ---------------------------
 ```java
+Pivot will be smallest element in the array, and at every place 
+  arr[prev]< arr[next] but not for pivot.
 int findIndex(int arr[], int low, int high) {
 
   if (low > high) {
