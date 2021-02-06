@@ -281,6 +281,34 @@ class Pair implements Comparable<Pair> {
     }
 }
 ```
+Find Pivot in Binary Search
+---------------------------
+```java
+int findIndex(int arr[], int low, int high) {
+
+  if (low > high) {
+    return -1;
+  }
+
+  if (low == high) {
+    return low;
+  }
+
+  int mid = (low + high) >> 1;
+  if (mid - 1 >= low && arr[mid - 1] > arr[mid]) {
+    return mid;
+  }
+  if (mid + 1 <= high && arr[mid] > arr[mid + 1]) {
+    return mid + 1;
+  }
+  if (arr[low] < arr[mid]) {
+    return findIndex(arr, mid + 1, high);
+  } else {
+     return findIndex(arr, low, mid - 1);
+  }
+
+}
+```
 ### Algo DS notes ###
 BFS
 ------
