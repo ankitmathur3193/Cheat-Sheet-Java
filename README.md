@@ -304,7 +304,7 @@ int findIndex(int arr[], int low, int high) {
     return mid + 1;
   }
   if (arr[low] < arr[mid]) { // all elements after pivot, will be smaller than first              
-  return findIndex(arr, mid + 1, high);                                index       
+  return findIndex(arr, mid + 1, high);                                // index       
   } else {
      return findIndex(arr, low, mid - 1);
   }
