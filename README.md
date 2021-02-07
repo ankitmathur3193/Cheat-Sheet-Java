@@ -288,23 +288,22 @@ Pivot will be smallest element in the array, and at every place
   arr[prev]< arr[next] but not for pivot.
 int findIndex(int arr[], int low, int high) {
 
-  if (low > high) {
+  if (low > high) { // base case
     return -1;
   }
 
-  if (low == high) {
+  if (low == high) { // search converges
     return low;
   }
 
   int mid = (low + high) >> 1;
-  if (mid - 1 >= low && arr[mid - 1] > arr[mid]) {
+  if (mid - 1 >= low && arr[mid - 1] > arr[mid]) {//mid could be the pivot
     return mid;
   }
-  if (mid + 1 <= high && arr[mid] > arr[mid + 1]) {
+  if (mid + 1 <= high && arr[mid] > arr[mid + 1]) {// mid+1 could be the pivot
     return mid + 1;
   }
-  if (arr[low] < arr[mid]) {
-    return findIndex(arr, mid + 1, high);
+  if (arr[low] < arr[mid]) { // all elements after pivot, will be smaller than first              return findIndex(arr, mid + 1, high);                                index       
   } else {
      return findIndex(arr, low, mid - 1);
   }
