@@ -63,8 +63,9 @@ Map<Integer, List<Integer>> numByRemainder = arr.stream().collect(groupingBy(x -
 Convert Arrays to List
 -----------------------
 ```java
+List<Integer> listOfNum = Arrays.asList(1,2,3,4); // Converts to list.
+List<Integer> listOfNum = Arrays.stream(arr).collect(Collectors.toList()); // Always use streams to array to list.
 int arr[] = {1,2,3,4};
-List<Integer> listOfNum = Arrays.asList(arr); 
 List<Integer> listOfNum = Arrays.stream(arr).map(x->x*2).collect(Collectors.toList()); //Transform 
                                                                              // and convert to List
 ```
