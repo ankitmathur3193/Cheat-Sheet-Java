@@ -3,8 +3,7 @@
 Generating Random Numbers
 ------------
 ```java
-Random randomNum = new Random(); // Random(long seed)
-Random random = new Random(System.currentTimeMillis()); // seed as current time
+Random randomNum = new Random(); // It already has unique seed.
 randomNum.nextInt();
 randomNum.nextInt(bound); // [0,bound)
 randomNum.nextDouble();
