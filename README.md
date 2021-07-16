@@ -330,20 +330,44 @@ Sliding Window
 --------------
 Always increase one index of right first, compute window, try to reduce left.
 ```
-     int left = 0;
+    int left = 0;
     int right = 0;
-    int alpha[] = new int[200];
-    int maxLength = 0;
+    
     while (right < s.length()) {
-      char temp = s.charAt(right);
-      alpha[temp]++;
-      while (alpha[temp] > 1) {
-        alpha[s.charAt(left)]--;
+      1. Add currentRight to Window;
+      2. Check if window is satisifying criteria, if not increment left until window becomes valid;
+      3. Compute the desired property of window;
+      4. Increment Right;
+    }
+    
+
+```
+Example:
+--------
+```
+ public int lengthOfLongestSubstringAtMostTwoDistinctChars(String s) {
+    int left = 0;
+    int right = 0;
+    int maxLength = 0;
+
+    HashMap<Character, Integer> hs = new HashMap<>();
+    while (right < s.length()) {
+      hs.put(s.charAt(right), hs.getOrDefault(s.charAt(right), 0) + 1);
+
+      while (hs.size() > 2) {
+        hs.put(s.charAt(left), hs.get(s.charAt(left)) - 1);
+        if (hs.get(s.charAt(left)) == 0) {
+          hs.remove(s.charAt(left));
+        }
         left++;
       }
+
       maxLength = Math.max(maxLength, right - left + 1);
       right++;
     }
+
+    return maxLength;
+  }
 ```
 
 Topological Sort
