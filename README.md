@@ -326,14 +326,25 @@ DFS
 recurison function, don't need to check if they are already visited.
 3. Don't put base case if vertex is already visited.
 
-Dijkstra
----------
-1. No need to have a visited array, just insert elements in the minHeap.
-2. While insertion check, if vertex current distance is more than the new distance 
-, then only insert and also update current distance.
-3. After removal from queue, try for all edges again and again.
-4. Loop until all distances are not finalized, after a point, you won't find any new distance smaller than
-the current distance, and queue will become empty ultimately (since no new insertions are happening).
+Sliding Window
+--------------
+Always increase one index of right first, compute window, try to reduce left.
+```
+     int left = 0;
+    int right = 0;
+    int alpha[] = new int[200];
+    int maxLength = 0;
+    while (right < s.length()) {
+      char temp = s.charAt(right);
+      alpha[temp]++;
+      while (alpha[temp] > 1) {
+        alpha[s.charAt(left)]--;
+        left++;
+      }
+      maxLength = Math.max(maxLength, right - left + 1);
+      right++;
+    }
+```
 
 Topological Sort
 ----------------
