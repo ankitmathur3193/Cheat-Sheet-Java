@@ -326,9 +326,8 @@ DFS
 recurison function, don't need to check if they are already visited.
 3. Don't put base case if vertex is already visited.
 
-Sliding Window
+Sliding Window Algorithm
 --------------
-Always increase one index of right first, compute window, try to reduce left.
 ```
     int left = 0;
     int right = 0;
