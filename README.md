@@ -38,6 +38,8 @@ int a = 0;
 sb.append((char) (a+'a')); // converting int to alphabet.
 sb.reverse(); // returns stringBuiler with reversed string.
 sb.toString(); // return string.
+
+str = str.replaceAll("\\s", ""); // Remove All WhiteSpace from a String.
 ```
 
 Sorting String characters
