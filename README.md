@@ -122,7 +122,7 @@ Stack
 -----------------------------------
 ```java
 Stack<Integer> stack = new Stack<>();
-stack.push(element);
+stack.add(element);
 stack.pop(); // Returns and removes top element
 stack.peek(); // Returns but doesn't remove
 stack.isEmpty();
