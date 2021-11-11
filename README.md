@@ -147,7 +147,10 @@ TreeMap<Intger,Integer> treeMap = new TreeMap();
 treeMap.ceilingEntry(5); returns smallest key >=5 or null
 treeMap.floorEntry(5); returns largest key <=5 or null
 treeMap.ceilingKey(5); returns smallest key >=5 or null
-treeMap.floorKey(5); returns largest key <=5 or null     
+treeMap.floorKey(5); returns largest key <=5 or null  
+
+treeMap.firstEntry(); // lowest Entry or null
+treeMap.lastEntry(); //highest Entry or null
 ```
 
 TreeSet
@@ -158,11 +161,14 @@ treeSet.add(1);
 treeSet.ceiling(6); // returns smallest key>=6 or null
 treeSet.floor(0); // returns largest key<=0 or null
 treeSet.contains(3); // checks if 3 is present or not
-
+treeSet.first(); // smallest Key
+treeSet.last(); // largest key
 Iterator<Integer> it = treeSet.iterator();
 while (it.hasNext()) {
     System.out.printf("%d\n", it.next());
 }
+
+
 ```
 
 File Reading 
